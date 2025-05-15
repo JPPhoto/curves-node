@@ -1,4 +1,4 @@
-# curves
+# curves-node
 
 Provides an InvokeAI node for applying tone mapping curves and dithering effects to images.
 
