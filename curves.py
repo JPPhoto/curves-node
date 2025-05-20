@@ -19,12 +19,12 @@ from invokeai.invocation_api import (
 
 
 @invocation(
-    "curves_invocation", title="CurvesInvocation", tags=["curves", "interpolation", "dithering"], version="1.0.0"
+    "curves_invocation", title="CurvesInvocation", tags=["curves", "interpolation", "dithering"], version="1.0.1"
 )
 class CurvesInvocation(BaseInvocation, WithMetadata, WithBoard):
     """Applies interpolation and dithering to an image based on user inputs"""
 
-    image: ImageField = InputField(description="The image to apply curves and dithering to", default=None)
+    image: ImageField = InputField(description="The image to apply curves and dithering to")
     mapping_str: str = InputField(
         description="String of input-output mappings", default="0:0,64:48,128:128,200:240,255:255"
     )
